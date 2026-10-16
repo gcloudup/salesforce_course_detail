@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Salesforce Course: 60 Days Step by Step | GCloudUp</title>
+<meta name="description" content="Salesforce Admin, Apex, LWC, Integration and Agentforce course, planned day by day over 60 days with projects, mock tests and interview preparation.">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#10142a;--cream:#f4efe4;--mute:#4b5173}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 Sora,system-ui,sans-serif}
+a{color:inherit}:focus-visible{outline:3px solid #ffd400;outline-offset:3px}
+.top{position:sticky;top:0;z-index:10;background:var(--ink);color:#fff;display:flex;align-items:center;gap:14px;padding:10px 5vw;padding-top:calc(10px + env(safe-area-inset-top,0px))}
+.top b{font:400 20px Anton,sans-serif;letter-spacing:.05em;white-space:nowrap}
+.top nav{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}.top nav::-webkit-scrollbar{display:none}
+.top nav a{white-space:nowrap;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #ffffff44;border-radius:99px;padding:5px 13px}
+.top nav a:hover{background:#fff;color:var(--ink)}
+.hero{padding:clamp(48px,9vw,110px) 6vw 50px;max-width:1100px;margin:0 auto}
+.hero p.eb{font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin:0 0 10px}
+h1,h2{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;margin:0}
+h1{font-size:clamp(46px,9vw,130px);line-height:.95}
+.lead{max-width:60ch;color:var(--mute);font-size:18px;margin:18px 0 26px}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 26px}
+.stats span{border:2px solid var(--ink);border-radius:99px;padding:6px 16px;font-weight:600;font-size:14px}
+.prog{max-width:520px}.prog small{font-weight:600}
+.bar{height:10px;border-radius:99px;background:#10142a22;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#0b8fdc,#6a4cff,#e8541f);transition:width .4s}
+.ph{max-width:1100px;margin:0 auto 60px;padding:0 6vw}
+.hd{background:var(--c);color:var(--on,#fff);border-radius:22px;padding:clamp(22px,4vw,40px)}
+.hd small{font-weight:600;letter-spacing:.15em;text-transform:uppercase;font-size:12px}
+.hd h2{font-size:clamp(36px,7vw,84px);line-height:1;margin:6px 0 8px}
+.hd p{margin:0;max-width:52ch;font-size:17px}
+.tl{list-style:none;margin:26px 0 0;padding:0 0 0 14px;border-left:3px solid var(--c)}
+.day{position:relative;display:grid;grid-template-columns:110px 1fr;gap:6px 18px;padding:18px 0 22px 22px;border-bottom:1px solid #10142a1f}
+.day:before{content:"";position:absolute;left:-23px;top:26px;width:15px;height:15px;border-radius:50%;background:var(--cream);border:4px solid var(--c)}
+.day.ok:before{background:var(--c)}
+.n{font:400 clamp(34px,5vw,52px)/1 Anton,sans-serif;color:var(--t)}.n small{display:block;font:600 11px Sora,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--mute)}
+.day h3{font:400 clamp(22px,3vw,30px)/1.1 Anton,sans-serif;text-transform:uppercase;margin:0 0 8px;letter-spacing:.02em}
+.tag{display:inline-block;margin-left:8px;vertical-align:middle;font:600 11px Sora,sans-serif;letter-spacing:.08em;background:var(--ink);color:#fff;border-radius:99px;padding:3px 10px}
+.day ul{list-style:none;margin:0 0 10px;padding:0;display:flex;flex-wrap:wrap;gap:7px}
+.day li{border:1.5px solid #10142a55;border-radius:99px;padding:3px 12px;font-size:14px;background:#fff8}
+.dn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;cursor:pointer}.dn input{width:18px;height:18px;accent-color:var(--t)}
+.cta{max-width:1100px;margin:0 auto;padding:0 6vw 90px}.cta div{background:var(--ink);color:#fff;border-radius:22px;padding:clamp(24px,5vw,48px)}
+.cta h2{font-size:clamp(32px,6vw,64px);line-height:1}.cta p{color:#c4c9e6;max-width:55ch}
+.btn{display:inline-block;background:#fff;color:var(--ink);font-weight:600;text-decoration:none;padding:13px 26px;border-radius:99px}
+@media(max-width:620px){.day{grid-template-columns:1fr}.n small{display:inline;margin-left:8px}.n{display:flex;align-items:baseline}}
+@media print{.top,.dn,.cta{display:none}.hd{border:2px solid var(--ink);color:var(--ink);background:#fff}.day{break-inside:avoid}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar i{transition:none}}
+</style></head><body>
+<header class="top"><b>GCLOUDUP</b><nav aria-label="Course phases"><a href="#p1">1 Admin</a><a href="#p2">2 Apex</a><a href="#p3">3 LWC</a><a href="#p4">4 Integration</a><a href="#p5">5 Agentforce</a><a href="#p6">6 Capstone</a></nav></header>
+<main>
+<section class="hero"><p class="eb">GCloudUp Technologies Pvt Ltd</p><h1>Salesforce course, day by day.</h1>
+<p class="lead">Admin, Apex development, LWC, Integration and Agentforce in 60 days, with mini projects, mock tests, a capstone project and interview preparation. Finish each day in order and tick it off.</p>
+<div class="stats"><span>60 days</span><span>6 phases</span><span>3 mini projects</span><span>Capstone project</span></div>
+<div class="prog" aria-live="polite"><small id="pt">0 of 60 days done</small><div class="bar"><i id="pf"></i></div></div></section>
+<div id="phases"></div>
+</main>
+<div class="cta"><div><h2>Ready to start?</h2><p>Course content and batch timings are confirmed by our team. Message us to book a free demo class.</p><a class="btn" id="wa" href="#" target="_blank" rel="noopener">Enquire on WhatsApp</a></div></div>
+<script>
+const PH=[
+{id:"p1",n:"1",name:"Admin",range:"Days 1-17",c:"#0b8fdc",t:"#0873b5",o:"Set up and customise Salesforce without code: data, security, automation, reports and deployment basics.",d:[
+[1,"Getting started","Cloud computing|Salesforce overview|Editions|Dev org setup|Setup navigation|Trailhead"],
+[2,"Data model","Standard and custom objects|Fields and field types"],
+[3,"Relationships","Lookup|Master-detail|Many-to-many|Schema Builder"],
+[4,"Data quality and layouts","Validation rules|Formula fields|Roll-up summaries|Dependent picklists|Record types|Page layouts"],
+[5,"Security 1","OWD|Profiles|Permission sets|Permission set groups"],
+[6,"Security 2","Role hierarchy|Sharing rules|Manual sharing|Teams|Field-level security"],
+[7,"Sales Cloud","Leads, accounts, contacts, opportunities|Products and price books|Lead conversion|Object overview and uses"],
+[8,"Service Cloud","Cases|Queues|Assignment and escalation rules|Email-to-case and web-to-case|Knowledge|Object overview and uses"],
+[9,"Lightning App Builder","Lightning pages|Dynamic forms|Compact layouts|List views|Apps"],
+[10,"Flow 1","Record-triggered flows|Screen flows|Variables|Elements"],
+[11,"Flow 2","Scheduled and autolaunched flows|Subflows|Loops|Fault handling|Migrating from Workflow and Process Builder"],
+[12,"Approvals and templates","Approval processes|Email templates|Flow orchestration (overview)"],
+[13,"Reports and dashboards","Report types|Joined reports|Buckets|Dynamic dashboards"],
+[14,"Data management","Import Wizard|Data Loader|Duplicate and matching rules|Backup and export"],
+[15,"Deployment basics","Sandboxes|Change sets|Deployment basics|Experience Cloud intro|AppExchange"],
+[16,"Admin mini project","Project based on the Admin concepts you learned|Documentation provided so you can practise each concept"],
+[17,"Admin mock test","Admin mock test"]]},
+{id:"p2",n:"2",name:"Apex Development",range:"Days 18-32",c:"#e8541f",t:"#d14512",o:"Write, test and debug Apex code, with triggers, asynchronous processing and best practices.",d:[
+[18,"Programming basics","Programming and OOP basics|Apex intro|Developer Console|VS Code and SFDX setup|Data types"],
+[19,"Apex fundamentals","Control statements|Collections (List, Set, Map)|Classes and methods|Constructors|Access modifiers"],
+[20,"SOQL 1","Filters|Relationship queries|Aggregates"],
+[21,"SOQL 2 and DML","SOQL 2|SOSL|DML|Database class methods|Governor limits"],
+[22,"Triggers 1","Syntax|Context variables|Before and after triggers"],
+[23,"Triggers 2","Handler pattern|Bulkification|Recursion control"],
+[24,"Trigger scenarios","Trigger scenario discussion|At least the top 20 interview scenarios provided for practice"],
+[25,"Test classes","@isTest|Test data factory|75% coverage|Assertions"],
+[26,"Asynchronous Apex 1","@future|Queueable"],
+[27,"Asynchronous Apex 2","Batch Apex|Schedulable"],
+[28,"Apex essentials","Exception handling|Custom settings and metadata|Custom labels|With/without sharing|CRUD/FLS|stripInaccessible"],
+[29,"Visualforce and Aura","Visualforce basics|Aura component basic structure discussion"],
+[30,"Debugging and design","Debugging and logs|Design patterns|Best practices|Platform Events intro"],
+[31,"Apex mini project","Project based on the Apex concepts you learned|Documentation provided so you can practise each concept"],
+[32,"Apex mock test","Apex mock test"]]},
+{id:"p3",n:"3",name:"LWC",range:"Days 33-42",c:"#6a4cff",t:"#5a3ce8",o:"Build modern user interfaces with Lightning Web Components that talk to Apex and Salesforce data.",d:[
+[33,"JavaScript for LWC","ES6 modules|Arrow functions|Destructuring|Promises|async/await"],
+[34,"LWC introduction","Bundle structure|First component|Data binding|Decorators"],
+[35,"Reactivity and UI","Reactivity|Template directives|Event handling|Getters|SLDS|Base components"],
+[36,"Component communication","@api|Custom events|Pub-sub|Lightning Message Service"],
+[37,"Lifecycle and composition","Lifecycle hooks|Slots|Composition"],
+[38,"Apex with LWC","@wire|Imperative calls|Cacheable methods|refreshApex"],
+[39,"Lightning Data Service","Record forms|getRecord|createRecord|UI API"],
+[40,"UI features","Navigation|Toasts|Datatable|Modals|LWC in Flow and Experience Cloud|Aura coexistence"],
+[41,"Quality","Jest testing|Debugging|Performance|Lightning Web Security"],
+[42,"LWC mini project","Project based on the concepts you learned"]]},
+{id:"p4",n:"4",name:"Integration",range:"Days 43-49",c:"#12b8a6",t:"#0a7d71",o:"Connect Salesforce with other systems using REST and SOAP, authentication, callouts and events.",d:[
+[43,"Integration basics","REST vs SOAP|JSON and XML|HTTP methods|Status codes|Postman"],
+[44,"Authentication","OAuth flows|Connected Apps|Named and External Credentials"],
+[45,"Callouts","Apex callouts (HttpRequest)|JSON parsing|HttpCalloutMock testing"],
+[46,"Web services","Apex REST (@RestResource)|SOAP web services|WSDL2Apex"],
+[47,"Salesforce APIs","REST, SOAP, Bulk and Composite APIs|Platform Events|Change Data Capture|Pub/Sub API"],
+[48,"Patterns and connectors","External Services|Salesforce Connect and External Objects|Integration patterns|MuleSoft overview"],
+[49,"Integration project","Integration project (for example payment gateway or ERP sync)"]]},
+{id:"p5",n:"5",name:"Agentforce",range:"Days 50-53",c:"#ffb703",t:"#8a5a00",on:"#10142a",o:"Understand generative AI in Salesforce and build a simple Agentforce agent from start to finish.",d:[
+[50,"AI foundations","Generative AI basics|Einstein Trust Layer|Data Cloud basics|Prompt Builder and prompt templates"],
+[51,"Agentforce fundamentals","Agent Builder|Topics|Instructions|Actions|Reasoning engine"],
+[52,"Agent actions","Actions using Flow, Apex and prompts|Grounding with Data Cloud|Testing agents"],
+[53,"Build an agent","End-to-end agent|Guardrails|Channels|Deployment|Check Trailhead and release notes, as content changes quickly"]]},
+{id:"p6",n:"6",name:"Capstone and Interview",range:"Days 54-60",c:"#10142a",t:"#10142a",o:"Bring everything together in one project, then practise until you are interview-ready.",d:[
+[54,"Capstone 1","Requirements|Data model|Security"],
+[55,"Capstone 2","Flows|Apex"],
+[56,"Capstone 3","LWC|Integration"],
+[57,"Capstone 4","Agentforce|Deployment|Demo presentation"],
+[58,"Career preparation","Resume|LinkedIn|Trailhead profile|GitHub portfolio|Rapid-fire Admin and Apex questions"],
+[59,"Technical panel","Apex|LWC|Integration|Scenario questions"],
+[60,"Final round","Technical plus HR round|Feedback session|Job-search strategy|Certification roadmap"]]}];
+const TAG={16:"Project",31:"Project",42:"Project",49:"Project",17:"Test",32:"Test",54:"Capstone",55:"Capstone",56:"Capstone",57:"Capstone",59:"Interview",60:"Interview"};
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+let done=[];try{done=JSON.parse(localStorage.getItem("sf60")||"[]")}catch(e){}
+document.getElementById("phases").innerHTML=PH.map(p=>`<section class="ph" id="${p.id}" style="--c:${p.c};--t:${p.t};--on:${p.on||"#fff"}">
+<div class="hd"><small>Phase ${p.n} &middot; ${p.range}</small><h2>${esc(p.name)}</h2><p>${esc(p.o)}</p></div>
+<ol class="tl">${p.d.map(([n,t,l])=>`<li class="day${done.includes(n)?" ok":""}"><div class="n"><small>Day</small>${String(n).padStart(2,"0")}</div><div><h3>${esc(t)}${TAG[n]?`<span class="tag">${TAG[n]}</span>`:""}</h3><ul>${l.split("|").map(x=>`<li>${esc(x)}</li>`).join("")}</ul><label class="dn"><input type="checkbox" data-d="${n}"${done.includes(n)?" checked":""}> Done</label></div></li>`).join("")}</ol></section>`).join("");
+function upd(){const k=done.length;document.getElementById("pt").textContent=k+" of 60 days done";document.getElementById("pf").style.width=k/60*100+"%"}
+document.getElementById("phases").addEventListener("change",e=>{const c=e.target;if(!c.dataset.d)return;const n=+c.dataset.d;
+ done=c.checked?[...new Set([...done,n])]:done.filter(x=>x!==n);c.closest(".day").classList.toggle("ok",c.checked);
+ try{localStorage.setItem("sf60",JSON.stringify(done))}catch(e){}upd()});
+upd();
+document.getElementById("wa").href="https://wa.me/919561687822?text="+encodeURIComponent("Hi, I want to know about the Salesforce course");
+</script></body></html>
